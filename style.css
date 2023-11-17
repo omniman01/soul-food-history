@@ -1,5 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+
+
+
 :root{
     --primary:#B2533E;
+    --secondary:#FCE09B;
+    --primary-light-color: #FBECE9;
+    --primary-color-dark: #80301F;
 }
 
 .container {
@@ -61,6 +68,12 @@ nav li{
     top: 550px;
     }
 
+  body {
+    font-family: 'noto sans';
+    background: #FBECE9;
+    color: black;
+      }
+
   .origincard {
     display: flex;
     gap: 2.5em;
@@ -77,4 +90,23 @@ object-fit: cover;
 
   .chefsection {
     display: flex;
+  }
+
+  .chef-box {
+    padding: 4em;
+    background-color: #80301F;
+    margin: none;
+  }
+
+  .chefcard {
+    display: flex;
+    align-items: flex-start;
+    gap: 2em;
+    margin-top: 15px;
+    
+  }
+
+  .chefcard-photo img {
+    width: 100%;
+    height: 100%;
   }
