@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Lilita+One&family=Noto+Sans&display=swap');
 
 
 :root{
@@ -24,10 +23,19 @@
 .navigation {
     background: var(--primary);
     padding: 1.3em;
-    font-family: ;
+    font-family: 'lilita one';
     font-size: 1.3em;
     display: flex;
     justify-content: space-between;
+  }
+
+  .logo {
+    width: 100px;
+  }
+
+  .logo img {
+    width: 100%;
+    object-fit: contain;
   }
 
 nav a {
@@ -51,8 +59,8 @@ nav li{
   }
 
   h1 {
+    font-family: 'lilita one';
     color: brown;
-    font-family: ;
     position: absolute;
     left: 80px;
     bottom: 1px;
@@ -60,13 +68,25 @@ nav li{
   }
 
   h2 {
+    font-family: 'lilita one';
     color: black;
-    font-family: ;
     position: absolute;
     font-size: 6vh;
     left: 80px;
     top: 550px;
     }
+
+  h3 {
+    font-family: 'lilita one';
+   }
+
+   .soul-title {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 60px;
+    text-align: center;
+    color: #80301F;
+   }
+
 
   body {
     font-family: 'noto sans';
@@ -88,25 +108,466 @@ height: 100%;
 object-fit: cover;
   }
 
-  .chefsection {
-    display: flex;
+  .chef-title {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 60px;
+    text-align: center;
+    color: #FBECE9;
+   }
+
+   .chef-title-p {
+    text-align: center;
+    font-family: 'lilita one';
+   }
+
+  .chefsection-wrapper {
+    background-color: #80301F;
+    padding: 2em;
   }
 
-  .chef-box {
+  .chefsection {
+    display: flex;
     padding: 4em;
-    background-color: #80301F;
-    margin: none;
+    gap: 1em;
   }
 
   .chefcard {
     display: flex;
-    align-items: flex-start;
+    flex: 1;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
     gap: 2em;
     margin-top: 15px;
-    
   }
 
   .chefcard-photo img {
     width: 100%;
     height: 100%;
+    object-fit: cover;
+  }
+
+  .seasononingsection-wrapper {
+    padding: 2em;
+  }
+
+  .season-title {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 60px;
+    text-align: center;
+    color: #182023;
+  }
+
+  .season-title-p {
+    text-align: center;
+    font-family: 'lilita one';
+  }
+  
+  .seasoningsection {
+    display: flex;
+    align-items: flex-start;
+    padding: 4em;
+    gap: 1em;
+  }
+
+  .seasoningcard {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 15px;
+  }
+
+  .seasoningcard-photo img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+  }
+
+  .recipe-wrapper {
+    padding: 2em;
+  }
+
+  .recipe-title {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 60px;
+    text-align: center;
+    color: #182023;
+  }
+
+  .recipe-title-p {
+    text-align: center;
+    font-family: 'lilita one';
+  }
+
+  .featuredrecipes {
+    display: flex;
+    align-items: flex-start;
+    padding: 4em;
+    gap: 1em;
+  }
+
+  .recipecard {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 15px;
+  }
+
+  .recipecard-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .dessert-wrapper {
+    padding: 2em;
+  }
+
+  .dessert-title {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 60px;
+    text-align: center;
+    color: #182023;
+  }
+
+  .dessert-title-p {
+    text-align: center;
+    font-family: 'lilita one';
+  }  
+  
+  .dessertsection {
+    display: flex;
+    align-items: flex-start;
+    padding: 4em;
+    gap: 1em;
+  }
+
+  .dessertcard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 15px;
+    flex: 1;
+  }
+
+.dessertcard-photo {
+  width: 100%;
+  height: 400px;
+}
+
+  .dessertcard-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .restaurant-wrapper {
+    padding: 2em;
+  }
+
+  .restaurant-title {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 60px;
+    text-align: center;
+    color: #182023;
+  }
+
+  .restaurant-title-p {
+    text-align: center;
+    font-family: 'lilita one';
+  }  
+
+  .restaurantsection {
+    display: flex;
+    align-items: flex-start;
+    padding: 4em;
+    gap: 1em;
+  }
+
+  .restaurantcard {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 15px;
+  }
+
+  .restaurantcard-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  ul {
+    color: #182023;
+    text-align: left;
+    list-style-type: none;
+    }
+
+  .top-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .social-box {
+    display: inline-block;
+    margin: .5em;
+  }
+
+  footer {
+    font-family: 'Josefin sans', sans-serif;
+    background: #B2533E;
+    text-align: center;
+    color: black;
+    padding: 2em;
+  }
+
+  .copyright {
+    text-align: center;
+  }
+
+  button {
+    background-color: #FBECE9;
+    border: none;
+    position: absolute;
+    bottom: -290%;
+    left: -2.5%;
+    transform: translate(90%, -60%);
+    padding: 10px 40px;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 20px;
+  }
+
+  button:hover {
+    background-color: bisque;
+    color: tan;
+  }
+
+  zephyrbutton {
+    background-color: #FBECE9;
+    border: none;
+    position: absolute;
+    bottom: -290%;
+    left: 20%;
+    transform: translate(90%, -60%);
+    padding: 10px 40px;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 20px;
+    font: black;
+  }
+
+  zephyrbutton:hover {
+    background-color: bisque;
+    color: tan;
+  }
+
+  patrickbutton {
+    background-color: #FBECE9;
+    border: none;
+    position: absolute;
+    bottom: -290%;
+    left: 41.5%;
+    transform: translate(90%, -60%);
+    padding: 10px 40px;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 20px;
+    font: black;
+  }
+
+  patrickbutton:hover {
+    background-color: bisque;
+    color: tan;
+  }
+
+  joebutton {
+    background-color: #FBECE9;
+    border: none;
+    position: absolute;
+    bottom: -290%;
+    left: 63%;
+    transform: translate(90%, -60%);
+    padding: 10px 40px;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 20px;
+    font: black;
+  }
+
+  joebutton:hover {
+    background-color: bisque;
+    color: tan;
+  }
+
+  collardbutton {
+    background-color: #B2533E;
+    border: none;
+    position: absolute;
+    bottom: -580%;
+    left: 5%;
+    transform: translate(90%, -60%);
+    padding: 10px 40px;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 20px;
+    font: black;
+  }
+
+  collardbutton:hover {
+    background-color: brown;
+    color: tan;
+  }
+
+  macbutton {
+    background-color: #B2533E;
+    border: none;
+    position: absolute;
+    bottom: -580%;
+    left: 35%;
+    transform: translate(90%, -60%);
+    padding: 10px 40px;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 20px;
+    font: black;
+  }
+
+  macbutton:hover {
+    background-color: brown;
+    color: tan;
+  }
+  
+  catfishbutton {
+    background-color: #B2533E;
+    border: none;
+    position: absolute;
+    bottom: -580%;
+    left: 65%;
+    transform: translate(90%, -60%);
+    padding: 10px 40px;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 20px;
+    font: black;
+  }
+
+  catfishbutton:hover {
+    background-color: brown;
+    color: tan;
+  }
+
+  piebutton {
+    background-color: #B2533E;
+    border: none;
+    position: absolute;
+    bottom: -740%;
+    left: 14%;
+    transform: translate(90%, -60%);
+    padding: 10px 40px;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 20px;
+    font: black;
+  }
+
+  piebutton:hover {
+    background-color: brown;
+    color: tan;
+  }
+
+  cobblerbutton {
+    background-color: #B2533E;
+    border: none;
+    position: absolute;
+    bottom: -740%;
+    left: 55%;
+    transform: translate(90%, -60%);
+    padding: 10px 40px;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 20px;
+    font: black;
+  }
+
+  cobblerbutton:hover {
+    background-color: brown;
+    color: tan;
+  }
+
+  armybutton {
+    background-color: #B2533E;
+    border: none;
+    position: absolute;
+    bottom: -880%;
+    left: 8%;
+    transform: translate(90%, -60%);
+    padding: 10px 40px;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 20px;
+    font: black;
+  }
+
+  armybutton:hover {
+    background-color: brown;
+    color: tan;
+  }
+
+  floridabutton {
+    background-color: #B2533E;
+    border: none;
+    position: absolute;
+    bottom: -880%;
+    left: 35%;
+    transform: translate(90%, -60%);
+    padding: 10px 40px;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 20px;
+    font: black;
+  }
+
+  floridabutton:hover {
+    background-color: brown;
+    color: tan;
+  }
+
+  hbutton {
+    background-color: #B2533E;
+    border: none;
+    position: absolute;
+    bottom: -880%;
+    left: 65%;
+    transform: translate(90%, -60%);
+    padding: 10px 40px;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 20px;
+    font: black;
+  }
+
+  hbutton:hover {
+    background-color: brown;
+    color: tan;
   }
